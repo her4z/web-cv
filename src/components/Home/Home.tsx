@@ -23,6 +23,7 @@ export default class Home extends Component {
                     startIcon={<GitHubIcon/>}
                     />
                 </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, odio debitis! Qui enim nam quae, optio iste temporibus, placeat tempore cumque, repellendus voluptate eos sint non dolore at harum! Voluptatibus!</p>
             </div>
         )
     }
