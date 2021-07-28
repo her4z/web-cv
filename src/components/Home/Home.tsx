@@ -15,11 +15,13 @@ export default class Home extends Component {
                     <Button
                     size="large"
                     href="https://www.linkedin.com/in/sebastianheras/"
+                    target="_blank"
                     startIcon={<LinkedInIcon/>}
                     />
                     <Button
                     size="large"
                     href="https://github.com/her4z"
+                    target="_blank"
                     startIcon={<GitHubIcon/>}
                     />
                 </div>
