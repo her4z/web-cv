@@ -7,11 +7,7 @@ class App extends React.Component {
   render(){
     return (
       <div className="App">
-        <div className="App-header">
-          <React.Fragment>
-            <Home></Home>
-          </React.Fragment>
-        </div>
+          <Home></Home>
       </div>
     );
   }
