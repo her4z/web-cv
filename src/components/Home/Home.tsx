@@ -21,18 +21,21 @@ export default class Home extends Component {
                         style={{backgroundColor: '#F23A29', color: 'black', fontWeight: 600}}
                     >Click me for a sneak peek!</Button>
                 </div>
-                <div className="social-buttons" style={{textAlign: 'center'}}>
+                <div className="social-buttons">
                     <Button
                     className="button_icon"
                     href="https://www.linkedin.com/in/sebastianheras/"
                     target="_blank"
-                    startIcon={<LinkedInIcon style={{height: '50px', width: '50px'}}/>}
+                    startIcon={<LinkedInIcon className="social-icons" style={{height: '50px', width: '50px'}}/>}
+                    classes={{ startIcon: 'social-icons' }}
+
                     />
                     <Button
                     className="button_icon"
                     href="https://github.com/her4z"
                     target="_blank"
-                    startIcon={<GitHubIcon style={{height: '50px', width: '50px'}}/>}
+                    startIcon={<GitHubIcon className="social-icons" style={{height: '50px', width: '50px'}}/>}
+                    classes={{ startIcon: 'social-icons' }}
                     />
                 </div>
             </div>
