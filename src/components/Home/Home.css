@@ -1,31 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-h1{
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-}
-h3{
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-}
-.button-troll{
-    font-family: 'Roboto', sans-serif;
-    width: fit-content;
-    margin: 0 auto;
-}
 .container{
     width: 100%;
     background-color: #011826;
     color: white;
-    font-size: calc(10px + 2vmin);
-    margin-top: 30vh;
 }
-.social-buttons{
-    margin-top: 3%;
+.welcome-text{
+    font-size: 6em;
+}
+.welcome-text-first{
     text-align: center;
 }
-.social-icons{
-    padding-left: 5px;
+.welcome-text-second{
+    text-align: center;
 }
+
+
 
 
 

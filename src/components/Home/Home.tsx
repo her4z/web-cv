@@ -1,43 +1,44 @@
 import './Home.css';
-import React, { Component } from 'react'
-import { Button } from '@material-ui/core';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import GitHubIcon from '@material-ui/icons/GitHub';
+import React from 'react';
+import Grid from '@material-ui/core/Grid';
 
 
 
 
-export default class Home extends Component {
+export default class Home extends React.Component<{}, any> {
+    constructor(props:any) {
+        super(props);
+        this.state = {
+        };
+    }
+
+    componentDidMount(){
+        this.loadAnimations();
+    }
+
+    loadAnimations(){
+        this.setState({
+            firstAnimation: 'animate__fadeInLeft',
+            secondAnimation: 'animate__fadeInRight'
+        })
+    }
+
     render() {
         return (
             <div className="container" style={{width: '100%', height: '100%'}}>
-                <h1>Sorry, this isn't finished yet :/</h1>
-                <h3>"Lo siento, esto aún no está terminado."</h3>
-                <div className="button-troll">
-                    <Button
-                        target="_blank"
-                        href="https://youtu.be/dQw4w9WgXcQ"
-                        variant="contained"
-                        style={{backgroundColor: '#F23A29', color: 'black', fontWeight: 600}}
-                    >Click me for a sneak peek!</Button>
-                </div>
-                <div className="social-buttons">
-                    <Button
-                    className="button_icon"
-                    href="https://www.linkedin.com/in/sebastianheras/"
-                    target="_blank"
-                    startIcon={<LinkedInIcon className="social-icons" style={{height: '50px', width: '50px'}}/>}
-                    classes={{ startIcon: 'social-icons' }}
+                <Grid container spacing={2}>
+                    <Grid item xs={12} className="welcome-text">
+                        <div className={`welcome-text-first animate__animated ${this.state.firstAnimation}`}>
+                            <text>Hi,</text>
+                        </div>
+                    </Grid>
+                    <Grid item xs={12} className="welcome-text">
+                        <div className={`welcome-text-second animate__animated ${this.state.secondAnimation}`}>
+                            <text >I'm Sebastian</text>
+                        </div>
+                    </Grid>
 
-                    />
-                    <Button
-                    className="button_icon"
-                    href="https://github.com/her4z"
-                    target="_blank"
-                    startIcon={<GitHubIcon className="social-icons" style={{height: '50px', width: '50px'}}/>}
-                    classes={{ startIcon: 'social-icons' }}
-                    />
-                </div>
+                </Grid>
             </div>
         )
     }
