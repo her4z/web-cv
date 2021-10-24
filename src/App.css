@@ -4,10 +4,16 @@
   
 }
 
-html{
-  height: 100%;
-  background-color: #011826;
 
+html, #app, #app>div {
+  height: 100%
 }
 
+#root{
+  height: 100%;
+}
 
+body {
+  height: 102%;
+
+}

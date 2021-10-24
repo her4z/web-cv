@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 .container{
     width: 100%;
-    background-color: #011826;
-    color: white;
+    height: 100%;
 }
 .welcome-text{
     font-size: 6em;
