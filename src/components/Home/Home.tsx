@@ -38,7 +38,7 @@ export default class Home extends React.Component<{}, any> {
           });
         return (
             <ThemeProvider theme={theme}>
-                <Paper style={{height: '100%', width: '100%'}}>
+                <Paper style={{height: '100%', width: '100%'}} elevation={0} square>
                     <div className="container">
                         <Grid container spacing={2}>
                             <Grid item xs={3}>
