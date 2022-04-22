@@ -6,12 +6,19 @@
 .welcome-text{
     font-size: 6em;
 }
+.welcome-subtext{
+    font-size: 2em;
+}
 .welcome-text-first{
     text-align: center;
 }
 .welcome-text-second{
     text-align: center;
 }
+.welcome-text-third{
+    text-align: center;
+}
+
 
 
 
